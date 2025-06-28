@@ -15,17 +15,27 @@
   </style>
 </head>
 <body>
-
-  You’ve used 815 GB of your storage
-
-  185 GB Left
-  
-  0 GB
-  1000 GB
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main class="storage-ui">
+    <section class="storage-ui__actions">
+      <img src="images/logo.svg" alt="">
+      <button><img src="images/icon-document.svg" alt=""></button>
+      <button><img src="images/icon-folder.svg" alt=""></button>
+      <button><img src="images/icon-upload.svg" alt=""></button>
+    </section>
+    <section class="storage-ui__data">
+      
+      <p>You’ve used 815 GB of your storage</p>
+      <div class="storage-bar">
+        <div class="storage-bar__used"></div>
+      </div>
+      <div class="storage-remaining">
+        <p>185 GB Left</p>
+      </div>
+    
+      <p><strong>0 GB</strong></p>
+      <p>1000 GB</p>
+    </section>
+    
+  </main>
 </body>
 </html>
