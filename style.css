@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url('images/bg-desktop.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center bottom;
+    background-color: hsl(229, 57%, 11%);
+
+    color: white;
+}
+.storage-ui {
+    display: flex;
+    gap: 2rem;
+}
+.storage-ui__actions {
+    width: 20rem;
+    padding: 2rem;
+    background-color: hsl(228, 56%, 26%);
+}
+.storage-ui__data {
+    position: relative;
+    width: 35rem;
+    padding: 2rem;
+    background-color: hsl(228, 56%, 26%);
+}
+.buttons {
+    display: flex;
+    gap: 1rem;
+}
+.storage-remaining {
+    position: absolute;
+    width: 10rem;
+    height: 5rem;
+    top: 0;
+    right: 10%;
+    transform: translateY(-50%);
+    background-color: white;
+}
+.storage-bar {
+    width: 30rem;
+    height: 1rem;
+    background-color: hsl(229, 57%, 11%);
+}
+.storage-range {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}

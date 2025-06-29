@@ -5,22 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Fylo data storage component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
+  
 </head>
 <body>
   <main class="storage-ui">
     <section class="storage-ui__actions">
       <img src="images/logo.svg" alt="">
-      <button><img src="images/icon-document.svg" alt=""></button>
-      <button><img src="images/icon-folder.svg" alt=""></button>
-      <button><img src="images/icon-upload.svg" alt=""></button>
+      <div class="buttons">
+        <button><img src="images/icon-document.svg" alt=""></button>
+        <button><img src="images/icon-folder.svg" alt=""></button>
+        <button><img src="images/icon-upload.svg" alt=""></button>
+      </div>
     </section>
     <section class="storage-ui__data">
       
@@ -31,9 +31,10 @@
       <div class="storage-remaining">
         <p>185 GB Left</p>
       </div>
-    
-      <p><strong>0 GB</strong></p>
-      <p>1000 GB</p>
+      <div class="storage-range">
+        <p><strong>0 GB</strong></p>
+        <p>1000 GB</p>
+      </div>
     </section>
     
   </main>
