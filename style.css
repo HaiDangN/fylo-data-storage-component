@@ -75,7 +75,7 @@ button {
     margin-bottom: .5rem;
     width: 31rem;
     height: 1.2rem;
-    background-color: hsl(229, 57%, 11%);
+    background-color: hsl(227, 58%, 16%);
     border-radius: 9999px;
 }
 .storage-ui__bar-used {
@@ -137,7 +137,7 @@ button {
     justify-content: center;
     height: 100%;
     gap: .5rem;
-    color: black;
+    color: hsl(229, 57%, 11%)
 }
 .storage-ui__remaining-storage p {
     text-transform: uppercase;
@@ -148,4 +148,38 @@ button {
     font-weight: 700;
     font-size: 2.8rem;
     color: hsl(229, 57%, 11%);
+}
+
+@media (max-width: 950px) {
+    body {
+        background-image: url('images/bg-mobile.png');
+        background-position: center top;
+        background-size: cover;
+    }
+    .storage-ui {
+        text-align: center;
+        flex-direction: column;
+    }
+    .storage-ui__data-text {
+        margin-top: 0;
+    }
+    .storage-ui__data {
+        height: 10rem;
+        width: 20rem;
+        margin-bottom: 2.5rem;
+    }
+    .storage-ui__bar {
+        width: 16rem;
+    }
+    .storage-ui__bar-used {
+        width: 12rem;
+    }
+    .storage-ui__remaining-storage {
+        right: 4rem;
+        top: 10.75rem;
+        border-bottom-right-radius: .7rem;
+    }
+    .storage-ui__remaining-storage::after {
+        content: none;
+    }
 }
