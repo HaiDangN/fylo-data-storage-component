@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -15,6 +17,9 @@ body {
     background-color: hsl(229, 57%, 11%);
 
     color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    font-size: 14px;
 }
 .storage-ui {
     display: flex;
@@ -37,12 +42,33 @@ body {
 }
 .storage-remaining {
     position: absolute;
-    width: 10rem;
+    width: 12rem;
     height: 5rem;
     top: 0;
     right: 10%;
     transform: translateY(-50%);
     background-color: white;
+
+    text-align: center;
+}
+.storage-remaining__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: .5rem;
+    border: 1px red solid;
+    color: black;
+}
+.storage-remaining p {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: hsl(229, 7%, 55%);
+}
+.storage-remaining strong {
+    font-weight: 700;
+    font-size: 3rem;
+    color: hsl(229, 57%, 11%);
 }
 .storage-bar {
     width: 30rem;
@@ -53,5 +79,5 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    font-weight: 300;
 }
