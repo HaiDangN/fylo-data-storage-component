@@ -75,7 +75,7 @@ button {
     margin-bottom: .5rem;
     width: 31rem;
     height: 1.2rem;
-    background-color: hsl(227, 58%, 16%);
+    background-color: hsl(228, 58%, 20%);
     border-radius: 9999px;
 }
 .storage-ui__bar-used {
@@ -157,13 +157,13 @@ button {
         background-size: cover;
     }
     .storage-ui {
-        text-align: center;
         flex-direction: column;
     }
     .storage-ui__data-text {
         margin-top: 0;
     }
     .storage-ui__data {
+        text-align: center;
         height: 10rem;
         width: 20rem;
         margin-bottom: 2.5rem;
