@@ -15,21 +15,25 @@
 <body>
   <main class="storage-ui">
     <section class="storage-ui__actions">
-      <img src="images/logo.svg" alt="">
+      <img class="logo" src="images/logo.svg" alt="Fylo logo">
       <div class="buttons">
-        <button><img src="images/icon-document.svg" alt=""></button>
-        <button><img src="images/icon-folder.svg" alt=""></button>
-        <button><img src="images/icon-upload.svg" alt=""></button>
+        <button><img src="images/icon-document.svg" alt="Document icon"></button>
+        <button><img src="images/icon-folder.svg" alt="Folder icon"></button>
+        <button><img src="images/icon-upload.svg" alt="Cloud upload icon"></button>
       </div>
     </section>
     <section class="storage-ui__data">
       
-      <p>You’ve used <strong>815 GB</strong> of your storage</p>
-      <div class="storage-bar">
-        <div class="storage-bar__used"></div>
+      <div class="storage-ui__data-text">
+        <p>You’ve used <strong>815 GB</strong> of your storage</p>
       </div>
-      <div class="storage-remaining">
-        <p class="storage-remaining__text">
+      <div class="storage-ui__bar">
+        <div class="storage-ui__bar-used">
+          <div class="storage-ui__bar-circle"></div>
+        </div>
+      </div>
+      <div class="storage-ui__remaining-storage">
+        <p class="storage-ui__remaining-storage-text">
           <strong>185</strong> 
           <span>GB Left</span>
         </div>
